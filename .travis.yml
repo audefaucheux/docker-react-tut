@@ -6,4 +6,4 @@ before_install:
   - docker build -t audefaucheux/docker-react-tut -f Dockerfile.dev .
 
 script:
-  - docker run audefaucheux/docker-react-tut npm run test -- --coverage
+  - docker run audefaucheux/docker-react-tut npm run test -- --watchAll=false
